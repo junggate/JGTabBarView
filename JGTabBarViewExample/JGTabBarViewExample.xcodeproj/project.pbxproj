@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14F504DB21950B5D0082C6DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F504DA21950B5D0082C6DD /* AppDelegate.swift */; };
+		14F504DD21950B5D0082C6DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F504DC21950B5D0082C6DD /* ViewController.swift */; };
+		14F504E021950B5D0082C6DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F504DE21950B5D0082C6DD /* Main.storyboard */; };
+		14F504E221950B5E0082C6DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F504E121950B5E0082C6DD /* Assets.xcassets */; };
+		14F504E521950B5E0082C6DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F504E321950B5E0082C6DD /* LaunchScreen.storyboard */; };
+		14F504F021950B5E0082C6DD /* JGTabBarViewExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F504EF21950B5E0082C6DD /* JGTabBarViewExampleTests.swift */; };
+		14F504FB21950B5E0082C6DD /* JGTabBarViewExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F504FA21950B5E0082C6DD /* JGTabBarViewExampleUITests.swift */; };
+		14F5052A219516060082C6DD /* SecondsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F50529219516060082C6DD /* SecondsViewController.swift */; };
+		14F505552198F7DC0082C6DD /* JGTabBarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F5051A21950BC00082C6DD /* JGTabBarView.framework */; };
+		14F505562198F7DC0082C6DD /* JGTabBarView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14F5051A21950BC00082C6DD /* JGTabBarView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14F504EC21950B5E0082C6DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14F504CF21950B5D0082C6DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14F504D621950B5D0082C6DD;
+			remoteInfo = JGTabBarViewExample;
+		};
+		14F504F721950B5E0082C6DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14F504CF21950B5D0082C6DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14F504D621950B5D0082C6DD;
+			remoteInfo = JGTabBarViewExample;
+		};
+		14F5051921950BC00082C6DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14F5051421950BC00082C6DD /* JGTabBarView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 14F504B421950B3F0082C6DD;
+			remoteInfo = JGTabBarView;
+		};
+		14F5051B21950BC00082C6DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14F5051421950BC00082C6DD /* JGTabBarView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 14F504BD21950B3F0082C6DD;
+			remoteInfo = JGTabBarViewTests;
+		};
+		14F5051D21950BC90082C6DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14F5051421950BC00082C6DD /* JGTabBarView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 14F504B321950B3F0082C6DD;
+			remoteInfo = JGTabBarView;
+		};
+		14F505572198F7DC0082C6DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14F5051421950BC00082C6DD /* JGTabBarView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 14F504B321950B3F0082C6DD;
+			remoteInfo = JGTabBarView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14F505592198F7DC0082C6DD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				14F505562198F7DC0082C6DD /* JGTabBarView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		14F504D721950B5D0082C6DD /* JGTabBarViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JGTabBarViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14F504DA21950B5D0082C6DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		14F504DC21950B5D0082C6DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14F504DF21950B5D0082C6DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14F504E121950B5E0082C6DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14F504E421950B5E0082C6DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14F504E621950B5E0082C6DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14F504EB21950B5E0082C6DD /* JGTabBarViewExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JGTabBarViewExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14F504EF21950B5E0082C6DD /* JGTabBarViewExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGTabBarViewExampleTests.swift; sourceTree = "<group>"; };
+		14F504F121950B5E0082C6DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14F504F621950B5E0082C6DD /* JGTabBarViewExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JGTabBarViewExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14F504FA21950B5E0082C6DD /* JGTabBarViewExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGTabBarViewExampleUITests.swift; sourceTree = "<group>"; };
+		14F504FC21950B5E0082C6DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14F5051421950BC00082C6DD /* JGTabBarView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JGTabBarView.xcodeproj; path = ../JGTabBarView/JGTabBarView.xcodeproj; sourceTree = "<group>"; };
+		14F50529219516060082C6DD /* SecondsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14F504D421950B5D0082C6DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14F505552198F7DC0082C6DD /* JGTabBarView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14F504E821950B5E0082C6DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14F504F321950B5E0082C6DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14F504CE21950B5D0082C6DD = {
+			isa = PBXGroup;
+			children = (
+				14F5051421950BC00082C6DD /* JGTabBarView.xcodeproj */,
+				14F504D921950B5D0082C6DD /* JGTabBarViewExample */,
+				14F504EE21950B5E0082C6DD /* JGTabBarViewExampleTests */,
+				14F504F921950B5E0082C6DD /* JGTabBarViewExampleUITests */,
+				14F504D821950B5D0082C6DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14F504D821950B5D0082C6DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14F504D721950B5D0082C6DD /* JGTabBarViewExample.app */,
+				14F504EB21950B5E0082C6DD /* JGTabBarViewExampleTests.xctest */,
+				14F504F621950B5E0082C6DD /* JGTabBarViewExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14F504D921950B5D0082C6DD /* JGTabBarViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				14F504DA21950B5D0082C6DD /* AppDelegate.swift */,
+				14F504DC21950B5D0082C6DD /* ViewController.swift */,
+				14F50529219516060082C6DD /* SecondsViewController.swift */,
+				14F504DE21950B5D0082C6DD /* Main.storyboard */,
+				14F504E121950B5E0082C6DD /* Assets.xcassets */,
+				14F504E321950B5E0082C6DD /* LaunchScreen.storyboard */,
+				14F504E621950B5E0082C6DD /* Info.plist */,
+			);
+			path = JGTabBarViewExample;
+			sourceTree = "<group>";
+		};
+		14F504EE21950B5E0082C6DD /* JGTabBarViewExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				14F504EF21950B5E0082C6DD /* JGTabBarViewExampleTests.swift */,
+				14F504F121950B5E0082C6DD /* Info.plist */,
+			);
+			path = JGTabBarViewExampleTests;
+			sourceTree = "<group>";
+		};
+		14F504F921950B5E0082C6DD /* JGTabBarViewExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				14F504FA21950B5E0082C6DD /* JGTabBarViewExampleUITests.swift */,
+				14F504FC21950B5E0082C6DD /* Info.plist */,
+			);
+			path = JGTabBarViewExampleUITests;
+			sourceTree = "<group>";
+		};
+		14F5051521950BC00082C6DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14F5051A21950BC00082C6DD /* JGTabBarView.framework */,
+				14F5051C21950BC00082C6DD /* JGTabBarViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14F504D621950B5D0082C6DD /* JGTabBarViewExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14F504FF21950B5E0082C6DD /* Build configuration list for PBXNativeTarget "JGTabBarViewExample" */;
+			buildPhases = (
+				14F504D321950B5D0082C6DD /* Sources */,
+				14F504D421950B5D0082C6DD /* Frameworks */,
+				14F504D521950B5D0082C6DD /* Resources */,
+				14F505592198F7DC0082C6DD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14F5051E21950BC90082C6DD /* PBXTargetDependency */,
+				14F505582198F7DC0082C6DD /* PBXTargetDependency */,
+			);
+			name = JGTabBarViewExample;
+			productName = JGTabBarViewExample;
+			productReference = 14F504D721950B5D0082C6DD /* JGTabBarViewExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14F504EA21950B5E0082C6DD /* JGTabBarViewExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14F5050221950B5E0082C6DD /* Build configuration list for PBXNativeTarget "JGTabBarViewExampleTests" */;
+			buildPhases = (
+				14F504E721950B5E0082C6DD /* Sources */,
+				14F504E821950B5E0082C6DD /* Frameworks */,
+				14F504E921950B5E0082C6DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14F504ED21950B5E0082C6DD /* PBXTargetDependency */,
+			);
+			name = JGTabBarViewExampleTests;
+			productName = JGTabBarViewExampleTests;
+			productReference = 14F504EB21950B5E0082C6DD /* JGTabBarViewExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14F504F521950B5E0082C6DD /* JGTabBarViewExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14F5050521950B5E0082C6DD /* Build configuration list for PBXNativeTarget "JGTabBarViewExampleUITests" */;
+			buildPhases = (
+				14F504F221950B5E0082C6DD /* Sources */,
+				14F504F321950B5E0082C6DD /* Frameworks */,
+				14F504F421950B5E0082C6DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14F504F821950B5E0082C6DD /* PBXTargetDependency */,
+			);
+			name = JGTabBarViewExampleUITests;
+			productName = JGTabBarViewExampleUITests;
+			productReference = 14F504F621950B5E0082C6DD /* JGTabBarViewExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14F504CF21950B5D0082C6DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = JungMoon;
+				TargetAttributes = {
+					14F504D621950B5D0082C6DD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					14F504EA21950B5E0082C6DD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 14F504D621950B5D0082C6DD;
+					};
+					14F504F521950B5E0082C6DD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 14F504D621950B5D0082C6DD;
+					};
+				};
+			};
+			buildConfigurationList = 14F504D221950B5D0082C6DD /* Build configuration list for PBXProject "JGTabBarViewExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14F504CE21950B5D0082C6DD;
+			productRefGroup = 14F504D821950B5D0082C6DD /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 14F5051521950BC00082C6DD /* Products */;
+					ProjectRef = 14F5051421950BC00082C6DD /* JGTabBarView.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				14F504D621950B5D0082C6DD /* JGTabBarViewExample */,
+				14F504EA21950B5E0082C6DD /* JGTabBarViewExampleTests */,
+				14F504F521950B5E0082C6DD /* JGTabBarViewExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		14F5051A21950BC00082C6DD /* JGTabBarView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JGTabBarView.framework;
+			remoteRef = 14F5051921950BC00082C6DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		14F5051C21950BC00082C6DD /* JGTabBarViewTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = JGTabBarViewTests.xctest;
+			remoteRef = 14F5051B21950BC00082C6DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14F504D521950B5D0082C6DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14F504E521950B5E0082C6DD /* LaunchScreen.storyboard in Resources */,
+				14F504E221950B5E0082C6DD /* Assets.xcassets in Resources */,
+				14F504E021950B5D0082C6DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14F504E921950B5E0082C6DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14F504F421950B5E0082C6DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14F504D321950B5D0082C6DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14F504DD21950B5D0082C6DD /* ViewController.swift in Sources */,
+				14F5052A219516060082C6DD /* SecondsViewController.swift in Sources */,
+				14F504DB21950B5D0082C6DD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14F504E721950B5E0082C6DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14F504F021950B5E0082C6DD /* JGTabBarViewExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14F504F221950B5E0082C6DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14F504FB21950B5E0082C6DD /* JGTabBarViewExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14F504ED21950B5E0082C6DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14F504D621950B5D0082C6DD /* JGTabBarViewExample */;
+			targetProxy = 14F504EC21950B5E0082C6DD /* PBXContainerItemProxy */;
+		};
+		14F504F821950B5E0082C6DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14F504D621950B5D0082C6DD /* JGTabBarViewExample */;
+			targetProxy = 14F504F721950B5E0082C6DD /* PBXContainerItemProxy */;
+		};
+		14F5051E21950BC90082C6DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JGTabBarView;
+			targetProxy = 14F5051D21950BC90082C6DD /* PBXContainerItemProxy */;
+		};
+		14F505582198F7DC0082C6DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JGTabBarView;
+			targetProxy = 14F505572198F7DC0082C6DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14F504DE21950B5D0082C6DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14F504DF21950B5D0082C6DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14F504E321950B5E0082C6DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14F504E421950B5E0082C6DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14F504FD21950B5E0082C6DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = JGTabBarView;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14F504FE21950B5E0082C6DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_MODULE_NAME = JGTabBarView;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14F5050021950B5E0082C6DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z899367H3S;
+				INFOPLIST_FILE = JGTabBarViewExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.junggate.JGTabBarViewExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14F5050121950B5E0082C6DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z899367H3S;
+				INFOPLIST_FILE = JGTabBarViewExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.junggate.JGTabBarViewExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		14F5050321950B5E0082C6DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z899367H3S;
+				INFOPLIST_FILE = JGTabBarViewExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.junggate.JGTabBarViewExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JGTabBarViewExample.app/JGTabBarViewExample";
+			};
+			name = Debug;
+		};
+		14F5050421950B5E0082C6DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z899367H3S;
+				INFOPLIST_FILE = JGTabBarViewExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.junggate.JGTabBarViewExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JGTabBarViewExample.app/JGTabBarViewExample";
+			};
+			name = Release;
+		};
+		14F5050621950B5E0082C6DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z899367H3S;
+				INFOPLIST_FILE = JGTabBarViewExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.junggate.JGTabBarViewExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JGTabBarViewExample;
+			};
+			name = Debug;
+		};
+		14F5050721950B5E0082C6DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z899367H3S;
+				INFOPLIST_FILE = JGTabBarViewExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.junggate.JGTabBarViewExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JGTabBarViewExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14F504D221950B5D0082C6DD /* Build configuration list for PBXProject "JGTabBarViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14F504FD21950B5E0082C6DD /* Debug */,
+				14F504FE21950B5E0082C6DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14F504FF21950B5E0082C6DD /* Build configuration list for PBXNativeTarget "JGTabBarViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14F5050021950B5E0082C6DD /* Debug */,
+				14F5050121950B5E0082C6DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14F5050221950B5E0082C6DD /* Build configuration list for PBXNativeTarget "JGTabBarViewExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14F5050321950B5E0082C6DD /* Debug */,
+				14F5050421950B5E0082C6DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14F5050521950B5E0082C6DD /* Build configuration list for PBXNativeTarget "JGTabBarViewExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14F5050621950B5E0082C6DD /* Debug */,
+				14F5050721950B5E0082C6DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14F504CF21950B5D0082C6DD /* Project object */;
+}
