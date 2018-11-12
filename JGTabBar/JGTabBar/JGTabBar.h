@@ -14,4 +14,4 @@ FOUNDATION_EXPORT double JGTabBarViewVersionNumber;
 //! Project version string for JGTabBarView.
 FOUNDATION_EXPORT const unsigned char JGTabBarViewVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <JGTabBarView/PublicHeader.h>
+

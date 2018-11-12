@@ -15,8 +15,10 @@
 		14F504F021950B5E0082C6DD /* JGTabBarViewExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F504EF21950B5E0082C6DD /* JGTabBarViewExampleTests.swift */; };
 		14F504FB21950B5E0082C6DD /* JGTabBarViewExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F504FA21950B5E0082C6DD /* JGTabBarViewExampleUITests.swift */; };
 		14F5052A219516060082C6DD /* SecondsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F50529219516060082C6DD /* SecondsViewController.swift */; };
-		14F505552198F7DC0082C6DD /* JGTabBarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F5051A21950BC00082C6DD /* JGTabBarView.framework */; };
-		14F505562198F7DC0082C6DD /* JGTabBarView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14F5051A21950BC00082C6DD /* JGTabBarView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		14F5055F2199061C0082C6DD /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F5055E2199061C0082C6DD /* TabViewController.swift */; };
+		14F50561219906250082C6DD /* TabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F50560219906250082C6DD /* TabViewController.xib */; };
+		14F5056F21990C530082C6DD /* JGTabBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F5056821990C210082C6DD /* JGTabBar.framework */; };
+		14F5057021990C530082C6DD /* JGTabBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14F5056821990C210082C6DD /* JGTabBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,33 +36,33 @@
 			remoteGlobalIDString = 14F504D621950B5D0082C6DD;
 			remoteInfo = JGTabBarViewExample;
 		};
-		14F5051921950BC00082C6DD /* PBXContainerItemProxy */ = {
+		14F5056721990C210082C6DD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 14F5051421950BC00082C6DD /* JGTabBarView.xcodeproj */;
+			containerPortal = 14F5056221990C210082C6DD /* JGTabBar.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 14F504B421950B3F0082C6DD;
-			remoteInfo = JGTabBarView;
+			remoteInfo = JGTabBar;
 		};
-		14F5051B21950BC00082C6DD /* PBXContainerItemProxy */ = {
+		14F5056921990C210082C6DD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 14F5051421950BC00082C6DD /* JGTabBarView.xcodeproj */;
+			containerPortal = 14F5056221990C210082C6DD /* JGTabBar.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 14F504BD21950B3F0082C6DD;
-			remoteInfo = JGTabBarViewTests;
+			remoteInfo = JGTabBarTests;
 		};
-		14F5051D21950BC90082C6DD /* PBXContainerItemProxy */ = {
+		14F5056B21990C290082C6DD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 14F5051421950BC00082C6DD /* JGTabBarView.xcodeproj */;
+			containerPortal = 14F5056221990C210082C6DD /* JGTabBar.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 14F504B321950B3F0082C6DD;
-			remoteInfo = JGTabBarView;
+			remoteInfo = JGTabBar;
 		};
-		14F505572198F7DC0082C6DD /* PBXContainerItemProxy */ = {
+		14F5057121990C530082C6DD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 14F5051421950BC00082C6DD /* JGTabBarView.xcodeproj */;
+			containerPortal = 14F5056221990C210082C6DD /* JGTabBar.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 14F504B321950B3F0082C6DD;
-			remoteInfo = JGTabBarView;
+			remoteInfo = JGTabBar;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -71,7 +73,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				14F505562198F7DC0082C6DD /* JGTabBarView.framework in Embed Frameworks */,
+				14F5057021990C530082C6DD /* JGTabBar.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,8 +94,10 @@
 		14F504F621950B5E0082C6DD /* JGTabBarViewExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JGTabBarViewExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F504FA21950B5E0082C6DD /* JGTabBarViewExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGTabBarViewExampleUITests.swift; sourceTree = "<group>"; };
 		14F504FC21950B5E0082C6DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14F5051421950BC00082C6DD /* JGTabBarView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JGTabBarView.xcodeproj; path = ../JGTabBarView/JGTabBarView.xcodeproj; sourceTree = "<group>"; };
 		14F50529219516060082C6DD /* SecondsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondsViewController.swift; sourceTree = "<group>"; };
+		14F5055E2199061C0082C6DD /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		14F50560219906250082C6DD /* TabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabViewController.xib; sourceTree = "<group>"; };
+		14F5056221990C210082C6DD /* JGTabBar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JGTabBar.xcodeproj; path = ../JGTabBar/JGTabBar.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14F505552198F7DC0082C6DD /* JGTabBarView.framework in Frameworks */,
+				14F5056F21990C530082C6DD /* JGTabBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +129,7 @@
 		14F504CE21950B5D0082C6DD = {
 			isa = PBXGroup;
 			children = (
-				14F5051421950BC00082C6DD /* JGTabBarView.xcodeproj */,
+				14F5056221990C210082C6DD /* JGTabBar.xcodeproj */,
 				14F504D921950B5D0082C6DD /* JGTabBarViewExample */,
 				14F504EE21950B5E0082C6DD /* JGTabBarViewExampleTests */,
 				14F504F921950B5E0082C6DD /* JGTabBarViewExampleUITests */,
@@ -147,9 +151,11 @@
 			isa = PBXGroup;
 			children = (
 				14F504DA21950B5D0082C6DD /* AppDelegate.swift */,
-				14F504DC21950B5D0082C6DD /* ViewController.swift */,
-				14F50529219516060082C6DD /* SecondsViewController.swift */,
 				14F504DE21950B5D0082C6DD /* Main.storyboard */,
+				14F504DC21950B5D0082C6DD /* ViewController.swift */,
+				14F5055E2199061C0082C6DD /* TabViewController.swift */,
+				14F50560219906250082C6DD /* TabViewController.xib */,
+				14F50529219516060082C6DD /* SecondsViewController.swift */,
 				14F504E121950B5E0082C6DD /* Assets.xcassets */,
 				14F504E321950B5E0082C6DD /* LaunchScreen.storyboard */,
 				14F504E621950B5E0082C6DD /* Info.plist */,
@@ -175,11 +181,11 @@
 			path = JGTabBarViewExampleUITests;
 			sourceTree = "<group>";
 		};
-		14F5051521950BC00082C6DD /* Products */ = {
+		14F5056321990C210082C6DD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14F5051A21950BC00082C6DD /* JGTabBarView.framework */,
-				14F5051C21950BC00082C6DD /* JGTabBarViewTests.xctest */,
+				14F5056821990C210082C6DD /* JGTabBar.framework */,
+				14F5056A21990C210082C6DD /* JGTabBarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,8 +205,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				14F5051E21950BC90082C6DD /* PBXTargetDependency */,
-				14F505582198F7DC0082C6DD /* PBXTargetDependency */,
+				14F5056C21990C290082C6DD /* PBXTargetDependency */,
+				14F5057221990C530082C6DD /* PBXTargetDependency */,
 			);
 			name = JGTabBarViewExample;
 			productName = JGTabBarViewExample;
@@ -279,8 +285,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 14F5051521950BC00082C6DD /* Products */;
-					ProjectRef = 14F5051421950BC00082C6DD /* JGTabBarView.xcodeproj */;
+					ProductGroup = 14F5056321990C210082C6DD /* Products */;
+					ProjectRef = 14F5056221990C210082C6DD /* JGTabBar.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -293,18 +299,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		14F5051A21950BC00082C6DD /* JGTabBarView.framework */ = {
+		14F5056821990C210082C6DD /* JGTabBar.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = JGTabBarView.framework;
-			remoteRef = 14F5051921950BC00082C6DD /* PBXContainerItemProxy */;
+			path = JGTabBar.framework;
+			remoteRef = 14F5056721990C210082C6DD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		14F5051C21950BC00082C6DD /* JGTabBarViewTests.xctest */ = {
+		14F5056A21990C210082C6DD /* JGTabBarTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = JGTabBarViewTests.xctest;
-			remoteRef = 14F5051B21950BC00082C6DD /* PBXContainerItemProxy */;
+			path = JGTabBarTests.xctest;
+			remoteRef = 14F5056921990C210082C6DD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -314,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F50561219906250082C6DD /* TabViewController.xib in Resources */,
 				14F504E521950B5E0082C6DD /* LaunchScreen.storyboard in Resources */,
 				14F504E221950B5E0082C6DD /* Assets.xcassets in Resources */,
 				14F504E021950B5D0082C6DD /* Main.storyboard in Resources */,
@@ -341,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F5055F2199061C0082C6DD /* TabViewController.swift in Sources */,
 				14F504DD21950B5D0082C6DD /* ViewController.swift in Sources */,
 				14F5052A219516060082C6DD /* SecondsViewController.swift in Sources */,
 				14F504DB21950B5D0082C6DD /* AppDelegate.swift in Sources */,
@@ -376,15 +384,15 @@
 			target = 14F504D621950B5D0082C6DD /* JGTabBarViewExample */;
 			targetProxy = 14F504F721950B5E0082C6DD /* PBXContainerItemProxy */;
 		};
-		14F5051E21950BC90082C6DD /* PBXTargetDependency */ = {
+		14F5056C21990C290082C6DD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = JGTabBarView;
-			targetProxy = 14F5051D21950BC90082C6DD /* PBXContainerItemProxy */;
+			name = JGTabBar;
+			targetProxy = 14F5056B21990C290082C6DD /* PBXContainerItemProxy */;
 		};
-		14F505582198F7DC0082C6DD /* PBXTargetDependency */ = {
+		14F5057221990C530082C6DD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = JGTabBarView;
-			targetProxy = 14F505572198F7DC0082C6DD /* PBXContainerItemProxy */;
+			name = JGTabBar;
+			targetProxy = 14F5057121990C530082C6DD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

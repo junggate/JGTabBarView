@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JGTabButton: UIButton {
+public class JGTabButton: UIButton {
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -17,7 +17,7 @@ class JGTabButton: UIButton {
     }
     
     private func setupDesign() {
-        var image = #imageLiteral(resourceName: "btnTabRound")
+        var image = UIImage(named: "btnTabRound", in: JGTabBarView.defaultBundel, compatibleWith: nil)!
         image = image.resizableImage(withCapInsets: UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16))
         setBackgroundImage(image, for: UIControl.State.selected)
         setBackgroundImage(image, for: UIControl.State.highlighted)

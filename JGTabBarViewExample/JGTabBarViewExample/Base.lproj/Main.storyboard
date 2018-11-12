@@ -13,12 +13,12 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JGTabBarViewExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JGTabBarView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5a-Pa-8c9" customClass="JGTabBarView" customModule="JGTabBarView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5a-Pa-8c9" customClass="JGTabBarView" customModule="JGTabBar">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -27,13 +27,14 @@
                         <constraints>
                             <constraint firstItem="Z5a-Pa-8c9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Iy7-Bk-KyT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z5a-Pa-8c9" secondAttribute="trailing" id="gBV-Zv-Eve"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z5a-Pa-8c9" secondAttribute="bottom" id="reI-sn-xp2"/>
+                            <constraint firstAttribute="bottom" secondItem="Z5a-Pa-8c9" secondAttribute="bottom" id="reI-sn-xp2"/>
                             <constraint firstItem="Z5a-Pa-8c9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uSa-jS-E71"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="Pb8-Gg-wqz" kind="custom" identifier="seconds" customClass="JGStoryboardSegue" customModule="JGTabBarViewExample" customModuleProvider="target" id="DBi-nG-umn"/>
+                        <outlet property="tabBarView" destination="Z5a-Pa-8c9" id="161-x8-VQH"/>
+                        <segue destination="Pb8-Gg-wqz" kind="custom" identifier="seconds" customClass="JGStoryboardSegue" customModule="JGTabBarView" customModuleProvider="target" id="DBi-nG-umn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -43,7 +44,7 @@
         <!--Seconds View Controller-->
         <scene sceneID="cnp-F6-gQx">
             <objects>
-                <viewController id="Pb8-Gg-wqz" customClass="SecondsViewController" customModule="JGTabBarViewExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Pb8-Gg-wqz" customClass="SecondsViewController" customModule="JGTabBarView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9J4-7x-u5m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
