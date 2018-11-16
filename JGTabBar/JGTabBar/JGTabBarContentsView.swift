@@ -114,7 +114,6 @@ public class JGTabBarContentsView: UIView {
     
     private func onTouchTab(index: Int) {
         if index != lastCallBackIndex {
-        print("index \(index)")
         lastCallBackIndex = index
         tabs?[index].onTouchTab()
         }
