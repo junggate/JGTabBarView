@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14F504BE21950B3F0082C6DD /* JGTabBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F504B421950B3F0082C6DD /* JGTabBar.framework */; };
-		14F504C321950B3F0082C6DD /* JGTabBarViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F504C221950B3F0082C6DD /* JGTabBarViewTests.swift */; };
 		14F504C521950B3F0082C6DD /* JGTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 14F504B721950B3F0082C6DD /* JGTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14F505202195108F0082C6DD /* JGTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F5051F2195108F0082C6DD /* JGTabBarView.swift */; };
 		14F50522219510990082C6DD /* JGTabBarContentsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F50521219510990082C6DD /* JGTabBarContentsView.xib */; };
@@ -21,24 +19,11 @@
 		14F5055D2198FAE20082C6DD /* JGTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F5055C2198FAE20082C6DD /* JGTabBar.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		14F504BF21950B3F0082C6DD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 14F504AB21950B3F0082C6DD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 14F504B321950B3F0082C6DD;
-			remoteInfo = JGTabBarView;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		1400D313219EB3B000EC0E4D /* JGTabBarView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JGTabBarView.podspec; path = ../JGTabBarView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xcconfig; };
+		1400D315219EB56700EC0E4D /* JGTabBarView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JGTabBarView.podspec; path = ../JGTabBarView.podspec; sourceTree = "<group>"; };
 		14F504B421950B3F0082C6DD /* JGTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JGTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F504B721950B3F0082C6DD /* JGTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JGTabBar.h; sourceTree = "<group>"; };
 		14F504B821950B3F0082C6DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14F504BD21950B3F0082C6DD /* JGTabBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JGTabBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		14F504C221950B3F0082C6DD /* JGTabBarViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGTabBarViewTests.swift; sourceTree = "<group>"; };
-		14F504C421950B3F0082C6DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14F5051F2195108F0082C6DD /* JGTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGTabBarView.swift; sourceTree = "<group>"; };
 		14F50521219510990082C6DD /* JGTabBarContentsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JGTabBarContentsView.xib; sourceTree = "<group>"; };
 		14F50523219511BA0082C6DD /* JGTabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGTabButton.swift; sourceTree = "<group>"; };
@@ -56,23 +41,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		14F504BA21950B3F0082C6DD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				14F504BE21950B3F0082C6DD /* JGTabBar.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		14F504AA21950B3F0082C6DD = {
 			isa = PBXGroup;
 			children = (
-				1400D313219EB3B000EC0E4D /* JGTabBarView.podspec */,
+				1400D315219EB56700EC0E4D /* JGTabBarView.podspec */,
 				14F504B621950B3F0082C6DD /* JGTabBar */,
-				14F504C121950B3F0082C6DD /* JGTabBarViewTests */,
 				14F504B521950B3F0082C6DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				14F504B421950B3F0082C6DD /* JGTabBar.framework */,
-				14F504BD21950B3F0082C6DD /* JGTabBarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,15 +75,6 @@
 				14F504B821950B3F0082C6DD /* Info.plist */,
 			);
 			path = JGTabBar;
-			sourceTree = "<group>";
-		};
-		14F504C121950B3F0082C6DD /* JGTabBarViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				14F504C221950B3F0082C6DD /* JGTabBarViewTests.swift */,
-				14F504C421950B3F0082C6DD /* Info.plist */,
-			);
-			path = JGTabBarViewTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,24 +111,6 @@
 			productReference = 14F504B421950B3F0082C6DD /* JGTabBar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		14F504BC21950B3F0082C6DD /* JGTabBarTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 14F504CB21950B3F0082C6DD /* Build configuration list for PBXNativeTarget "JGTabBarTests" */;
-			buildPhases = (
-				14F504B921950B3F0082C6DD /* Sources */,
-				14F504BA21950B3F0082C6DD /* Frameworks */,
-				14F504BB21950B3F0082C6DD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				14F504C021950B3F0082C6DD /* PBXTargetDependency */,
-			);
-			name = JGTabBarTests;
-			productName = JGTabBarViewTests;
-			productReference = 14F504BD21950B3F0082C6DD /* JGTabBarTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -176,9 +124,6 @@
 					14F504B321950B3F0082C6DD = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
-					};
-					14F504BC21950B3F0082C6DD = {
-						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -195,7 +140,6 @@
 			projectRoot = "";
 			targets = (
 				14F504B321950B3F0082C6DD /* JGTabBar */,
-				14F504BC21950B3F0082C6DD /* JGTabBarTests */,
 			);
 		};
 /* End PBXProject section */
@@ -211,13 +155,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		14F504BB21950B3F0082C6DD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -225,30 +162,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14F50524219511BA0082C6DD /* JGTabButton.swift in Sources */,
 				14F505202195108F0082C6DD /* JGTabBarView.swift in Sources */,
+				14F50524219511BA0082C6DD /* JGTabButton.swift in Sources */,
 				14F5055D2198FAE20082C6DD /* JGTabBar.swift in Sources */,
 				14F5052D219518A80082C6DD /* JGTabBarContentsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		14F504B921950B3F0082C6DD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				14F504C321950B3F0082C6DD /* JGTabBarViewTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		14F504C021950B3F0082C6DD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 14F504B321950B3F0082C6DD /* JGTabBar */;
-			targetProxy = 14F504BF21950B3F0082C6DD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		14F504C621950B3F0082C6DD /* Debug */ = {
@@ -428,44 +349,6 @@
 			};
 			name = Release;
 		};
-		14F504CC21950B3F0082C6DD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z899367H3S;
-				INFOPLIST_FILE = JGTabBarViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.junggate.JGTabBarViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		14F504CD21950B3F0082C6DD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z899367H3S;
-				INFOPLIST_FILE = JGTabBarViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.junggate.JGTabBarViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -483,15 +366,6 @@
 			buildConfigurations = (
 				14F504C921950B3F0082C6DD /* Debug */,
 				14F504CA21950B3F0082C6DD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		14F504CB21950B3F0082C6DD /* Build configuration list for PBXNativeTarget "JGTabBarTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				14F504CC21950B3F0082C6DD /* Debug */,
-				14F504CD21950B3F0082C6DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
