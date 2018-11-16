@@ -14,7 +14,6 @@
 		14F504E521950B5E0082C6DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F504E321950B5E0082C6DD /* LaunchScreen.storyboard */; };
 		14F504F021950B5E0082C6DD /* JGTabBarViewExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F504EF21950B5E0082C6DD /* JGTabBarViewExampleTests.swift */; };
 		14F504FB21950B5E0082C6DD /* JGTabBarViewExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F504FA21950B5E0082C6DD /* JGTabBarViewExampleUITests.swift */; };
-		14F5052A219516060082C6DD /* SecondsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F50529219516060082C6DD /* SecondsViewController.swift */; };
 		14F5055F2199061C0082C6DD /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F5055E2199061C0082C6DD /* TabViewController.swift */; };
 		14F50561219906250082C6DD /* TabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F50560219906250082C6DD /* TabViewController.xib */; };
 		14F5056F21990C530082C6DD /* JGTabBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F5056821990C210082C6DD /* JGTabBar.framework */; };
@@ -94,7 +93,6 @@
 		14F504F621950B5E0082C6DD /* JGTabBarViewExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JGTabBarViewExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F504FA21950B5E0082C6DD /* JGTabBarViewExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGTabBarViewExampleUITests.swift; sourceTree = "<group>"; };
 		14F504FC21950B5E0082C6DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14F50529219516060082C6DD /* SecondsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondsViewController.swift; sourceTree = "<group>"; };
 		14F5055E2199061C0082C6DD /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		14F50560219906250082C6DD /* TabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabViewController.xib; sourceTree = "<group>"; };
 		14F5056221990C210082C6DD /* JGTabBar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JGTabBar.xcodeproj; path = ../JGTabBar/JGTabBar.xcodeproj; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 				14F504DC21950B5D0082C6DD /* ViewController.swift */,
 				14F5055E2199061C0082C6DD /* TabViewController.swift */,
 				14F50560219906250082C6DD /* TabViewController.xib */,
-				14F50529219516060082C6DD /* SecondsViewController.swift */,
 				14F504E121950B5E0082C6DD /* Assets.xcassets */,
 				14F504E321950B5E0082C6DD /* LaunchScreen.storyboard */,
 				14F504E621950B5E0082C6DD /* Info.plist */,
@@ -350,7 +347,6 @@
 			files = (
 				14F5055F2199061C0082C6DD /* TabViewController.swift in Sources */,
 				14F504DD21950B5D0082C6DD /* ViewController.swift in Sources */,
-				14F5052A219516060082C6DD /* SecondsViewController.swift in Sources */,
 				14F504DB21950B5D0082C6DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

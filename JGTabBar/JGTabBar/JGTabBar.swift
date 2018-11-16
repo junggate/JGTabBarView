@@ -11,5 +11,5 @@ import UIKit
 public protocol JGTabBar {
     func getTabTitle() -> String
     func getViewController() -> UIViewController
-    func onTouchedTab()
+    func onTouchTab()
 }

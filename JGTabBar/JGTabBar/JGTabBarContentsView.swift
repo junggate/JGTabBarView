@@ -14,7 +14,6 @@ public class JGTabBarContentsView: UIView {
     @IBOutlet weak var headerWidthConstraint: NSLayoutConstraint!
     
     var tabButtons: [JGTabButton]? = []
-    
     public var tabs: [JGTabBar]? {
         didSet {
             tabs?.forEach({ (tab) in
@@ -23,8 +22,11 @@ public class JGTabBarContentsView: UIView {
                     addViewController(tab: tab)
                 }
             })
+            onTouchTab(index: 0)
         }
     }
+    
+    private var lastCallBackIndex: Int = -1
     
     // MARK: public
     open func selectTab(index: Int) {
@@ -94,7 +96,12 @@ public class JGTabBarContentsView: UIView {
         view.heightAnchor.constraint(equalTo: contentScrollView.heightAnchor).isActive = true
     }
 
-    
+    private func getCurrentIndex() -> Int {
+        let offsetX = contentScrollView.contentOffset.x
+        let scrollWidth = contentScrollView.bounds.width
+        let index = Int(roundf(Float(offsetX)/Float(scrollWidth)))
+        return index
+    }
     /// 버튼 선택 처리 (나머지 셀렉트 취소)
     ///
     /// - Parameter selectedButton: 셀렉트할 버튼
@@ -105,22 +112,37 @@ public class JGTabBarContentsView: UIView {
         selectedButton.isSelected = true
     }
     
+    private func onTouchTab(index: Int) {
+        if index != lastCallBackIndex {
+        print("index \(index)")
+        lastCallBackIndex = index
+        tabs?[index].onTouchTab()
+        }
+    }
+    
     // MARK: - Touch Event
     @objc func touchTab(sender: JGTabButton) {
         selectButton(selectedButton: sender)
         let index = tabButtons?.firstIndex(of: sender)
         contentScrollView.contentOffset = CGPoint(x: contentScrollView.bounds.size.width * CGFloat(index ?? 0), y: 0)
+        onTouchTab(index: getCurrentIndex())
     }
 }
 
 extension JGTabBarContentsView: UIScrollViewDelegate {
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let offsetX = scrollView.contentOffset.x
-        let scrollWidth = scrollView.bounds.width
-        
-        let index = roundf(Float(offsetX)/Float(scrollWidth))
+        let index = getCurrentIndex()
         if let button = tabButtons?[Int(index)] {
             selectButton(selectedButton: button)
         }
     }
+    
+    public func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+        onTouchTab(index: getCurrentIndex())
+    }
+    
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        onTouchTab(index: getCurrentIndex())
+    }
+    
 }
