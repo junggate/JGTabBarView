@@ -32,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1400D313219EB3B000EC0E4D /* JGTabBarView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JGTabBarView.podspec; path = ../JGTabBarView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xcconfig; };
 		14F504B421950B3F0082C6DD /* JGTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JGTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F504B721950B3F0082C6DD /* JGTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JGTabBar.h; sourceTree = "<group>"; };
 		14F504B821950B3F0082C6DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 		14F504AA21950B3F0082C6DD = {
 			isa = PBXGroup;
 			children = (
+				1400D313219EB3B000EC0E4D /* JGTabBarView.podspec */,
 				14F504B621950B3F0082C6DD /* JGTabBar */,
 				14F504C121950B3F0082C6DD /* JGTabBarViewTests */,
 				14F504B521950B3F0082C6DD /* Products */,
