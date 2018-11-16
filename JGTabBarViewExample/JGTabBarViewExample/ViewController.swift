@@ -17,11 +17,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        let tabViewController = TabViewController(nibName: "TabViewController", bundle: nil)
-        let tabViewController2 = TabViewController(nibName: "TabViewController", bundle: nil)
-        tabViewController2.tabTitle = "tabViewController2"
-        tabBarView.tabs = [tabViewController, tabViewController2]
-        
+        var views: [TabViewController] = []
+        (1...5).forEach { (index) in
+            let tabViewController = TabViewController(nibName: "TabViewController", bundle: nil)
+            tabViewController.tabTitle = "제목\(index)"
+            views.append(tabViewController)
+            
+            tabViewController.view.backgroundColor = UIColor(red: CGFloat.random(in: 0...255)/255.0,
+                                                             green: CGFloat.random(in: 0...255)/255.0,
+                                                             blue: CGFloat.random(in: 0...255)/255.0,
+                                                             alpha: 1.0)
+        }
+        tabBarView.tabs = views
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

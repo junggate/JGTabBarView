@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabViewController" customModule="JGTabBarView" customModuleProvider="target">
             <connections>
                 <outlet property="titleLabel" destination="dii-GF-5in" id="WBN-vF-lOh"/>
+                <outlet property="view" destination="iN0-l3-epB" id="uQP-mU-HmH"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
