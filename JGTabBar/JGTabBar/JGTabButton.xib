@@ -19,7 +19,7 @@
         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7dS-SG-zrV" customClass="JGTabButton" customModule="JGTabBar" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="94" height="55"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="16"/>
             <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
             <state key="normal" title="Button">

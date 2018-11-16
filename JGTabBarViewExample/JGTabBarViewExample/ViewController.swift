@@ -18,14 +18,14 @@ class ViewController: UIViewController {
         
         
         var views: [TabViewController] = []
-        (1...5).forEach { (index) in
+        (1...4).forEach { (index) in
             let tabViewController = TabViewController(nibName: "TabViewController", bundle: nil)
-            tabViewController.tabTitle = "제목\(index)"
+            tabViewController.tabTitle = "Button\(index)"
             views.append(tabViewController)
             
-            tabViewController.view.backgroundColor = UIColor(red: CGFloat.random(in: 0...255)/255.0,
-                                                             green: CGFloat.random(in: 0...255)/255.0,
-                                                             blue: CGFloat.random(in: 0...255)/255.0,
+            tabViewController.view.backgroundColor = UIColor(red: CGFloat.random(in: 220...255)/255.0,
+                                                             green: CGFloat.random(in: 220...255)/255.0,
+                                                             blue: CGFloat.random(in: 220...255)/255.0,
                                                              alpha: 1.0)
         }
         tabBarView.tabs = views
