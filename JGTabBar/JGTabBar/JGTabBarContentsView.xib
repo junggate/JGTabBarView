@@ -24,22 +24,9 @@
                         <constraint firstAttribute="width" constant="240" id="hh9-tc-6aw"/>
                     </constraints>
                 </view>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oAy-xD-9ix">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAy-xD-9ix">
                     <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                    <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bD-Qn-En5">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
-                        </stackView>
-                    </subviews>
                     <color key="backgroundColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstItem="9bD-Qn-En5" firstAttribute="centerY" secondItem="oAy-xD-9ix" secondAttribute="centerY" id="1se-0J-ykN"/>
-                        <constraint firstAttribute="bottom" secondItem="9bD-Qn-En5" secondAttribute="bottom" id="d3d-H1-mL4"/>
-                        <constraint firstAttribute="trailing" secondItem="9bD-Qn-En5" secondAttribute="trailing" id="fdX-xb-IrL"/>
-                        <constraint firstItem="9bD-Qn-En5" firstAttribute="centerX" secondItem="oAy-xD-9ix" secondAttribute="centerX" id="kSy-b1-RHf"/>
-                        <constraint firstItem="9bD-Qn-En5" firstAttribute="leading" secondItem="oAy-xD-9ix" secondAttribute="leading" id="l2m-F6-i0a"/>
-                        <constraint firstItem="9bD-Qn-En5" firstAttribute="top" secondItem="oAy-xD-9ix" secondAttribute="top" id="rpI-dO-yn3"/>
-                    </constraints>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -55,7 +42,6 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="contentScrollView" destination="oAy-xD-9ix" id="Chu-K8-jLk"/>
-                <outlet property="contentStackView" destination="9bD-Qn-En5" id="bBp-S6-Tby"/>
                 <outlet property="headerView" destination="ftm-gI-bjB" id="R6J-BT-Kv4"/>
                 <outlet property="headerWidthConstraint" destination="hh9-tc-6aw" id="FRp-YB-Kom"/>
             </connections>
