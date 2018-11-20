@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14A226DD21A3A2360019E019 /* JGTabBarView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14A226DC21A3A2360019E019 /* JGTabBarView.bundle */; };
 		14A226F921A3A4F00019E019 /* JGTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F5051F2195108F0082C6DD /* JGTabBarView.swift */; };
 		14A226FA21A3A4F00019E019 /* JGTabBarContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F5052C219518A80082C6DD /* JGTabBarContentsView.swift */; };
 		14A226FB21A3A4F00019E019 /* JGTabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F50523219511BA0082C6DD /* JGTabButton.swift */; };
@@ -18,6 +17,7 @@
 		14B0431621A3A5F700FE741E /* JGTabBar.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14F5055C2198FAE20082C6DD /* JGTabBar.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		14B0432021A3E5F100FE741E /* JGTabButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B0431F21A3E5E900FE741E /* JGTabButton.xib */; };
 		14B0432121A3E5F400FE741E /* JGTabBarContentsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B0431E21A3E5E500FE741E /* JGTabBarContentsView.xib */; };
+		14B0432321A3F0D700FE741E /* JGTabBarView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14A226DC21A3A2360019E019 /* JGTabBarView.bundle */; };
 		14F504C521950B3F0082C6DD /* JGTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 14F504B721950B3F0082C6DD /* JGTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -155,7 +155,7 @@
 			files = (
 				14B0432121A3E5F400FE741E /* JGTabBarContentsView.xib in Resources */,
 				14B0432021A3E5F100FE741E /* JGTabButton.xib in Resources */,
-				14A226DD21A3A2360019E019 /* JGTabBarView.bundle in Resources */,
+				14B0432321A3F0D700FE741E /* JGTabBarView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

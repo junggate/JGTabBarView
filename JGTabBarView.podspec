@@ -26,7 +26,7 @@ s.summary      = "Storyboard를 이용한 스크롤 제스처 기반의 탭바 �
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 s.description      = <<-DESC
 Storyboard를 이용한 스크롤 제스처 기반의 탭바 뷰
-DESC
+                     DESC
 
 s.homepage     = "https://github.com/junggate/JGTabBarView"
 # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -107,7 +107,7 @@ s.source_files  = 'JGTabBarView/JGTabBarView/**/*'
 
 # s.resource  = "icon.png"
 # s.resources = "Resources/*.png"
-s.resource_bundles = { 'JGTabBarView' => ['JGTabBarView/JGTabBarView/*.xib']}
+# s.resource_bundles = { 'JGTabBarView' => ['JGTabBarView/JGTabBarView/*.xib']}
 s.resources = 'JGTabBarView/JGTabBarView.bundle'
 
 # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
