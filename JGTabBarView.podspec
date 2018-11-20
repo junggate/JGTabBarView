@@ -28,7 +28,7 @@ s.description      = <<-DESC
 Storyboard를 이용한 스크롤 제스처 기반의 탭바 뷰
 DESC
 
-s.homepage     = "https://github.com/junggate/JGTabBarView/JGTabBar"
+s.homepage     = "https://github.com/junggate/JGTabBarView"
 # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -91,8 +91,8 @@ s.source       = { :git => "https://github.com/junggate/JGTabBarView.git", :comm
 #  Not including the public_header_files will make all headers public.
 #
 
-s.source_files  = "JGTabBar/JGTabBar", "**/*.{swift}"
-s.exclude_files = "Classes/Exclude"
+s.source_files  = 'JGTabBarView/JGTabBarView/**/*'
+# s.exclude_files = "Classes/Exclude"
 
 # s.public_header_files = "Classes/**/*.h"
 
@@ -107,6 +107,8 @@ s.exclude_files = "Classes/Exclude"
 
 # s.resource  = "icon.png"
 # s.resources = "Resources/*.png"
+s.resource_bundles = { 'JGTabBarView' => ['JGTabBarView/JGTabBarView/*.xib']}
+s.resources = 'JGTabBarView/JGTabBarView.bundle'
 
 # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

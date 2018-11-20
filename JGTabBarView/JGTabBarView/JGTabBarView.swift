@@ -9,11 +9,20 @@
 import UIKit
 
 @IBDesignable public class JGTabBarView: UIView {
-    static let defaultBundel = Bundle(identifier: "com.junggate.jgtabbar")
+    static var defaultBundel: Bundle? {
+        get {
+            let podBundle = Bundle(for: JGTabBarView.self)
+            if let url = podBundle.url(forResource: "JGTabBarView", withExtension: "bundle") {
+                let bundle = Bundle(url: url)
+                return bundle
+            }
+            return nil
+        }
+    }
     var tabBarContentsView: JGTabBarContentsView?
     public var tabs: [JGTabBar]? {
         set {
-            tabBarContentsView?.tabs = newValue
+          tabBarContentsView?.tabs = newValue
         }
         get {
             return tabBarContentsView?.tabs
@@ -23,7 +32,7 @@ import UIKit
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        let tabBarContents = UINib(nibName: "JGTabBarContentsView", bundle: JGTabBarView.defaultBundel)
+        let tabBarContents = UINib(nibName: "JGTabBarContentsView", bundle: Bundle(for: JGTabBarContentsView.self))
             .instantiate(withOwner: self, options: nil).first as! JGTabBarContentsView
         addSubview(tabBarContents)
         tabBarContents.translatesAutoresizingMaskIntoConstraints = false

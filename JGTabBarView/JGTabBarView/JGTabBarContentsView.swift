@@ -47,7 +47,7 @@ public class JGTabBarContentsView: UIView {
     }
     
     private func addTab(tab: JGTabBar) -> JGTabButton? {
-        if let tabButton = UINib(nibName: "JGTabButton", bundle: JGTabBarView.defaultBundel).instantiate(withOwner: self, options: nil).first as? JGTabButton {
+        if let tabButton = UINib(nibName: "JGTabButton", bundle: Bundle(for: JGTabButton.self)).instantiate(withOwner: self, options: nil).first as? JGTabButton {
             let lastButton = headerView.subviews.last
             
             headerView.addSubview(tabButton)

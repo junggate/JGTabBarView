@@ -7,28 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14A226DD21A3A2360019E019 /* JGTabBarView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14A226DC21A3A2360019E019 /* JGTabBarView.bundle */; };
+		14A226F921A3A4F00019E019 /* JGTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F5051F2195108F0082C6DD /* JGTabBarView.swift */; };
+		14A226FA21A3A4F00019E019 /* JGTabBarContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F5052C219518A80082C6DD /* JGTabBarContentsView.swift */; };
+		14A226FB21A3A4F00019E019 /* JGTabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F50523219511BA0082C6DD /* JGTabButton.swift */; };
+		14A226FC21A3A4F00019E019 /* JGTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F5055C2198FAE20082C6DD /* JGTabBar.swift */; };
+		14B0431321A3A5F700FE741E /* JGTabBarView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14F5051F2195108F0082C6DD /* JGTabBarView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B0431421A3A5F700FE741E /* JGTabBarContentsView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14F5052C219518A80082C6DD /* JGTabBarContentsView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B0431521A3A5F700FE741E /* JGTabButton.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14F50523219511BA0082C6DD /* JGTabButton.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B0431621A3A5F700FE741E /* JGTabBar.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14F5055C2198FAE20082C6DD /* JGTabBar.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B0432021A3E5F100FE741E /* JGTabButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B0431F21A3E5E900FE741E /* JGTabButton.xib */; };
+		14B0432121A3E5F400FE741E /* JGTabBarContentsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B0431E21A3E5E500FE741E /* JGTabBarContentsView.xib */; };
 		14F504C521950B3F0082C6DD /* JGTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 14F504B721950B3F0082C6DD /* JGTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14F505202195108F0082C6DD /* JGTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F5051F2195108F0082C6DD /* JGTabBarView.swift */; };
-		14F50522219510990082C6DD /* JGTabBarContentsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F50521219510990082C6DD /* JGTabBarContentsView.xib */; };
-		14F50524219511BA0082C6DD /* JGTabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F50523219511BA0082C6DD /* JGTabButton.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		14F50526219511C20082C6DD /* JGTabButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F50525219511C20082C6DD /* JGTabButton.xib */; };
-		14F50528219512130082C6DD /* asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F50527219512130082C6DD /* asset.xcassets */; };
-		14F5052D219518A80082C6DD /* JGTabBarContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F5052C219518A80082C6DD /* JGTabBarContentsView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		14F505542198F4210082C6DD /* JGTabBarView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14F5051F2195108F0082C6DD /* JGTabBarView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		14F5055A2198F84D0082C6DD /* JGTabBarContentsView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14F5052C219518A80082C6DD /* JGTabBarContentsView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		14F5055D2198FAE20082C6DD /* JGTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F5055C2198FAE20082C6DD /* JGTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1400D315219EB56700EC0E4D /* JGTabBarView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JGTabBarView.podspec; path = ../JGTabBarView.podspec; sourceTree = "<group>"; };
+		14A226DC21A3A2360019E019 /* JGTabBarView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JGTabBarView.bundle; sourceTree = SOURCE_ROOT; };
+		14A226DE21A3A2560019E019 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		14B0431E21A3E5E500FE741E /* JGTabBarContentsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JGTabBarContentsView.xib; sourceTree = "<group>"; };
+		14B0431F21A3E5E900FE741E /* JGTabButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JGTabButton.xib; sourceTree = "<group>"; };
 		14F504B421950B3F0082C6DD /* JGTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JGTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F504B721950B3F0082C6DD /* JGTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JGTabBar.h; sourceTree = "<group>"; };
-		14F504B821950B3F0082C6DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14F5051F2195108F0082C6DD /* JGTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGTabBarView.swift; sourceTree = "<group>"; };
-		14F50521219510990082C6DD /* JGTabBarContentsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JGTabBarContentsView.xib; sourceTree = "<group>"; };
 		14F50523219511BA0082C6DD /* JGTabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGTabButton.swift; sourceTree = "<group>"; };
-		14F50525219511C20082C6DD /* JGTabButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JGTabButton.xib; sourceTree = "<group>"; };
-		14F50527219512130082C6DD /* asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = asset.xcassets; sourceTree = "<group>"; };
 		14F5052C219518A80082C6DD /* JGTabBarContentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JGTabBarContentsView.swift; sourceTree = "<group>"; };
 		14F5055C2198FAE20082C6DD /* JGTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +50,9 @@
 			isa = PBXGroup;
 			children = (
 				1400D315219EB56700EC0E4D /* JGTabBarView.podspec */,
-				14F504B621950B3F0082C6DD /* JGTabBar */,
+				14F504B621950B3F0082C6DD /* JGTabBarView */,
+				14A226DC21A3A2360019E019 /* JGTabBarView.bundle */,
+				14A226DE21A3A2560019E019 /* Info.plist */,
 				14F504B521950B3F0082C6DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,20 +65,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		14F504B621950B3F0082C6DD /* JGTabBar */ = {
+		14F504B621950B3F0082C6DD /* JGTabBarView */ = {
 			isa = PBXGroup;
 			children = (
 				14F504B721950B3F0082C6DD /* JGTabBar.h */,
 				14F5051F2195108F0082C6DD /* JGTabBarView.swift */,
 				14F5052C219518A80082C6DD /* JGTabBarContentsView.swift */,
-				14F50521219510990082C6DD /* JGTabBarContentsView.xib */,
+				14B0431E21A3E5E500FE741E /* JGTabBarContentsView.xib */,
 				14F50523219511BA0082C6DD /* JGTabButton.swift */,
-				14F50525219511C20082C6DD /* JGTabButton.xib */,
+				14B0431F21A3E5E900FE741E /* JGTabButton.xib */,
 				14F5055C2198FAE20082C6DD /* JGTabBar.swift */,
-				14F50527219512130082C6DD /* asset.xcassets */,
-				14F504B821950B3F0082C6DD /* Info.plist */,
 			);
-			path = JGTabBar;
+			path = JGTabBarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,8 +87,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				14F504C521950B3F0082C6DD /* JGTabBar.h in Headers */,
-				14F505542198F4210082C6DD /* JGTabBarView.swift in Headers */,
-				14F5055A2198F84D0082C6DD /* JGTabBarContentsView.swift in Headers */,
+				14B0431521A3A5F700FE741E /* JGTabButton.swift in Headers */,
+				14B0431321A3A5F700FE741E /* JGTabBarView.swift in Headers */,
+				14B0431621A3A5F700FE741E /* JGTabBar.swift in Headers */,
+				14B0431421A3A5F700FE741E /* JGTabBarContentsView.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +131,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 14F504AE21950B3F0082C6DD /* Build configuration list for PBXProject "JGTabBar" */;
+			buildConfigurationList = 14F504AE21950B3F0082C6DD /* Build configuration list for PBXProject "JGTabBarView" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -149,9 +153,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14F50526219511C20082C6DD /* JGTabButton.xib in Resources */,
-				14F50522219510990082C6DD /* JGTabBarContentsView.xib in Resources */,
-				14F50528219512130082C6DD /* asset.xcassets in Resources */,
+				14B0432121A3E5F400FE741E /* JGTabBarContentsView.xib in Resources */,
+				14B0432021A3E5F100FE741E /* JGTabButton.xib in Resources */,
+				14A226DD21A3A2360019E019 /* JGTabBarView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,10 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14F505202195108F0082C6DD /* JGTabBarView.swift in Sources */,
-				14F50524219511BA0082C6DD /* JGTabButton.swift in Sources */,
-				14F5055D2198FAE20082C6DD /* JGTabBar.swift in Sources */,
-				14F5052D219518A80082C6DD /* JGTabBarContentsView.swift in Sources */,
+				14A226F921A3A4F00019E019 /* JGTabBarView.swift in Sources */,
+				14A226FB21A3A4F00019E019 /* JGTabButton.swift in Sources */,
+				14A226FC21A3A4F00019E019 /* JGTabBar.swift in Sources */,
+				14A226FA21A3A4F00019E019 /* JGTabBarContentsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +309,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = JGTabBar/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,7 +337,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = JGTabBar/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -352,7 +356,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		14F504AE21950B3F0082C6DD /* Build configuration list for PBXProject "JGTabBar" */ = {
+		14F504AE21950B3F0082C6DD /* Build configuration list for PBXProject "JGTabBarView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14F504C621950B3F0082C6DD /* Debug */,

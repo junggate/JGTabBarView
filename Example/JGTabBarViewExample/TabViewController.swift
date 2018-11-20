@@ -8,6 +8,7 @@
 
 import UIKit
 import JGTabBar
+
 class TabViewController: UIViewController, JGTabBar {
     public var tabTitle: String?
     
