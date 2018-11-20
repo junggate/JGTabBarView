@@ -80,7 +80,7 @@ s.platform     = :ios, "10.0"
 #  Supports git, hg, bzr, svn and HTTP.
 #
 
-s.source       = { :git => "https://github.com/junggate/JGTabBarView.git", :commit => "ae03d7ab3f13b80087f776aa472fa069e97d566c" }
+s.source       = { :git => "https://github.com/junggate/JGTabBarView.git", :commit => "5ffb23978e786a4e41abc6668114b030cb6f680d" }
 
 
 # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
