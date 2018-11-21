@@ -18,17 +18,15 @@
 		14B0432021A3E5F100FE741E /* JGTabButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B0431F21A3E5E900FE741E /* JGTabButton.xib */; };
 		14B0432121A3E5F400FE741E /* JGTabBarContentsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B0431E21A3E5E500FE741E /* JGTabBarContentsView.xib */; };
 		14B0432321A3F0D700FE741E /* JGTabBarView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14A226DC21A3A2360019E019 /* JGTabBarView.bundle */; };
-		14F504C521950B3F0082C6DD /* JGTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 14F504B721950B3F0082C6DD /* JGTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1400D315219EB56700EC0E4D /* JGTabBarView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JGTabBarView.podspec; path = ../JGTabBarView.podspec; sourceTree = "<group>"; };
+		1400D315219EB56700EC0E4D /* JGTabBarView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JGTabBarView.podspec; path = ../JGTabBarView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		14A226DC21A3A2360019E019 /* JGTabBarView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JGTabBarView.bundle; sourceTree = SOURCE_ROOT; };
 		14A226DE21A3A2560019E019 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		14B0431E21A3E5E500FE741E /* JGTabBarContentsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JGTabBarContentsView.xib; sourceTree = "<group>"; };
 		14B0431F21A3E5E900FE741E /* JGTabButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JGTabButton.xib; sourceTree = "<group>"; };
-		14F504B421950B3F0082C6DD /* JGTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JGTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		14F504B721950B3F0082C6DD /* JGTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JGTabBar.h; sourceTree = "<group>"; };
+		14F504B421950B3F0082C6DD /* JGTabBarView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JGTabBarView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F5051F2195108F0082C6DD /* JGTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGTabBarView.swift; sourceTree = "<group>"; };
 		14F50523219511BA0082C6DD /* JGTabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGTabButton.swift; sourceTree = "<group>"; };
 		14F5052C219518A80082C6DD /* JGTabBarContentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JGTabBarContentsView.swift; sourceTree = "<group>"; };
@@ -60,7 +58,7 @@
 		14F504B521950B3F0082C6DD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14F504B421950B3F0082C6DD /* JGTabBar.framework */,
+				14F504B421950B3F0082C6DD /* JGTabBarView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,7 +66,6 @@
 		14F504B621950B3F0082C6DD /* JGTabBarView */ = {
 			isa = PBXGroup;
 			children = (
-				14F504B721950B3F0082C6DD /* JGTabBar.h */,
 				14F5051F2195108F0082C6DD /* JGTabBarView.swift */,
 				14F5052C219518A80082C6DD /* JGTabBarContentsView.swift */,
 				14B0431E21A3E5E500FE741E /* JGTabBarContentsView.xib */,
@@ -86,7 +83,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14F504C521950B3F0082C6DD /* JGTabBar.h in Headers */,
 				14B0431521A3A5F700FE741E /* JGTabButton.swift in Headers */,
 				14B0431321A3A5F700FE741E /* JGTabBarView.swift in Headers */,
 				14B0431621A3A5F700FE741E /* JGTabBar.swift in Headers */,
@@ -97,9 +93,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		14F504B321950B3F0082C6DD /* JGTabBar */ = {
+		14F504B321950B3F0082C6DD /* JGTabBarView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14F504C821950B3F0082C6DD /* Build configuration list for PBXNativeTarget "JGTabBar" */;
+			buildConfigurationList = 14F504C821950B3F0082C6DD /* Build configuration list for PBXNativeTarget "JGTabBarView" */;
 			buildPhases = (
 				14F504AF21950B3F0082C6DD /* Headers */,
 				14F504B021950B3F0082C6DD /* Sources */,
@@ -110,9 +106,9 @@
 			);
 			dependencies = (
 			);
-			name = JGTabBar;
+			name = JGTabBarView;
 			productName = JGTabBarView;
-			productReference = 14F504B421950B3F0082C6DD /* JGTabBar.framework */;
+			productReference = 14F504B421950B3F0082C6DD /* JGTabBarView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -143,7 +139,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14F504B321950B3F0082C6DD /* JGTabBar */,
+				14F504B321950B3F0082C6DD /* JGTabBarView */,
 			);
 		};
 /* End PBXProject section */
@@ -365,7 +361,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14F504C821950B3F0082C6DD /* Build configuration list for PBXNativeTarget "JGTabBar" */ = {
+		14F504C821950B3F0082C6DD /* Build configuration list for PBXNativeTarget "JGTabBarView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14F504C921950B3F0082C6DD /* Debug */,

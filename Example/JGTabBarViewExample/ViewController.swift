@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import JGTabBar
+import JGTabBarView
 
 class ViewController: UIViewController {
 

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14B0431921A3D44800FE741E /* JGTabBarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A226F021A3A46B0019E019 /* JGTabBarView.framework */; };
-		14B0431A21A3D44800FE741E /* JGTabBarView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14A226F021A3A46B0019E019 /* JGTabBarView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		14B0431921A3D44800FE741E /* JGTabBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A226F021A3A46B0019E019 /* JGTabBar.framework */; };
+		14B0431A21A3D44800FE741E /* JGTabBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14A226F021A3A46B0019E019 /* JGTabBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14F504DB21950B5D0082C6DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F504DA21950B5D0082C6DD /* AppDelegate.swift */; };
 		14F504DD21950B5D0082C6DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F504DC21950B5D0082C6DD /* ViewController.swift */; };
 		14F504E021950B5D0082C6DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F504DE21950B5D0082C6DD /* Main.storyboard */; };
@@ -49,7 +49,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				14B0431A21A3D44800FE741E /* JGTabBarView.framework in Embed Frameworks */,
+				14B0431A21A3D44800FE741E /* JGTabBar.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14B0431921A3D44800FE741E /* JGTabBarView.framework in Frameworks */,
+				14B0431921A3D44800FE741E /* JGTabBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +91,7 @@
 		14A226EC21A3A46B0019E019 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14A226F021A3A46B0019E019 /* JGTabBarView.framework */,
+				14A226F021A3A46B0019E019 /* JGTabBar.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,10 +192,10 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		14A226F021A3A46B0019E019 /* JGTabBarView.framework */ = {
+		14A226F021A3A46B0019E019 /* JGTabBar.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = JGTabBarView.framework;
+			path = JGTabBar.framework;
 			remoteRef = 14A226EF21A3A46B0019E019 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -393,6 +393,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.junggate.JGTabBarViewExample;
+				PRODUCT_MODULE_NAME = JGTabBarViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -413,6 +414,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.junggate.JGTabBarViewExample;
+				PRODUCT_MODULE_NAME = JGTabBarViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import JGTabBar
+import JGTabBarView
 
 class TabViewController: UIViewController, JGTabBar {
     public var tabTitle: String?
