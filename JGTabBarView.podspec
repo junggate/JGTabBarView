@@ -64,7 +64,7 @@ s.author             = { "JungGate" => "josansnim@gmail.com" }
 #  the deployment target. You can optionally include the target after the platform.
 #
 
-s.platform     = :ios
+# s.platform     = :ios
 s.platform     = :ios, "10.0"
 
 #  When using multiple platforms
@@ -80,7 +80,7 @@ s.platform     = :ios, "10.0"
 #  Supports git, hg, bzr, svn and HTTP.
 #
 
-s.source       = { :git => "https://github.com/junggate/JGTabBarView.git", :commit => "5ffb23978e786a4e41abc6668114b030cb6f680d" }
+s.source       = { :git => "https://github.com/junggate/JGTabBarView.git", :tag => '1.0.0' }
 
 
 # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
