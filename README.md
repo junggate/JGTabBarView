@@ -16,9 +16,7 @@
 
 
 
-'''[swift]
-
-```
+```swift
 // create UIViewController (with JGTabBar protocol)
 class TabViewController: UIViewController, JGTabBar
 
@@ -40,4 +38,3 @@ override func viewDidLoad() {
     tabBarView.tabs = views 
 }
 ```
-
