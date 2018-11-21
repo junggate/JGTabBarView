@@ -12,3 +12,30 @@
 
 ![5](ScreenSample/jgtab.gif)
 
+
+
+'''[swift]
+
+```
+// create UIViewController (with JGTabBar protocol)
+class TabViewController: UIViewController, JGTabBar
+
+// XIB View variable
+@IBOutlet weak var tabBarView: JGTabBarView!
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+
+    var views: [TabViewController] = []
+    (1...4).forEach { (index) in
+        let tabViewController = TabViewController(nibName: "TabViewController", bundle: nil)
+        // Tab Button Title.
+        tabViewController.tabTitle = "Button\(index)"
+        views.append(tabViewController)
+    }
+
+    // set tabs
+    tabBarView.tabs = views 
+}
+```
+
