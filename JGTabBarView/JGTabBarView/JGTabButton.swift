@@ -16,6 +16,12 @@ public class JGTabButton: UIButton {
         setupDesign()
     }
     
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        setupDesign()
+    }
+    
     private func setupDesign() {
         var image = UIImage(named: "btnTabRound", in: JGTabBarView.defaultBundel, compatibleWith: nil)!
         image = image.resizableImage(withCapInsets: UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16))

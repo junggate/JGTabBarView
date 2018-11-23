@@ -12,8 +12,8 @@
 		14A226FB21A3A4F00019E019 /* JGTabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F50523219511BA0082C6DD /* JGTabButton.swift */; };
 		14A226FC21A3A4F00019E019 /* JGTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F5055C2198FAE20082C6DD /* JGTabBar.swift */; };
 		14B0431321A3A5F700FE741E /* JGTabBarView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14F5051F2195108F0082C6DD /* JGTabBarView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		14B0431421A3A5F700FE741E /* JGTabBarContentsView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14F5052C219518A80082C6DD /* JGTabBarContentsView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		14B0431521A3A5F700FE741E /* JGTabButton.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14F50523219511BA0082C6DD /* JGTabButton.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B0431421A3A5F700FE741E /* JGTabBarContentsView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14F5052C219518A80082C6DD /* JGTabBarContentsView.swift */; };
+		14B0431521A3A5F700FE741E /* JGTabButton.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14F50523219511BA0082C6DD /* JGTabButton.swift */; };
 		14B0431621A3A5F700FE741E /* JGTabBar.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14F5055C2198FAE20082C6DD /* JGTabBar.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		14B0432021A3E5F100FE741E /* JGTabButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B0431F21A3E5E900FE741E /* JGTabButton.xib */; };
 		14B0432121A3E5F400FE741E /* JGTabBarContentsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B0431E21A3E5E500FE741E /* JGTabBarContentsView.xib */; };
@@ -83,10 +83,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14B0431521A3A5F700FE741E /* JGTabButton.swift in Headers */,
 				14B0431321A3A5F700FE741E /* JGTabBarView.swift in Headers */,
 				14B0431621A3A5F700FE741E /* JGTabBar.swift in Headers */,
 				14B0431421A3A5F700FE741E /* JGTabBarContentsView.swift in Headers */,
+				14B0431521A3A5F700FE741E /* JGTabButton.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

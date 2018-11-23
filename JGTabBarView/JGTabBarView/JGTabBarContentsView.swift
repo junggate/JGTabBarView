@@ -41,6 +41,10 @@ public class JGTabBarContentsView: UIView {
         super.init(coder: aDecoder)
     }
     
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
     public override func awakeFromNib() {
         headerWidthConstraint.isActive = false
         contentScrollView.delegate = self

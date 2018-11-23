@@ -31,7 +31,15 @@ import UIKit
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
+        initialize()
+    }
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        initialize()
+    }
+    
+    private func initialize() {
         let tabBarContents = UINib(nibName: "JGTabBarContentsView", bundle: Bundle(for: JGTabBarContentsView.self))
             .instantiate(withOwner: self, options: nil).first as! JGTabBarContentsView
         addSubview(tabBarContents)
