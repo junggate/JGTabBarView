@@ -39,6 +39,11 @@ import UIKit
         initialize()
     }
     
+    // MARK: - public
+    open func refreshCurrentTab() {
+        tabBarContentsView?.refreshCurrentTab()
+    }
+    
     private func initialize() {
         let tabBarContents = UINib(nibName: "JGTabBarContentsView", bundle: Bundle(for: JGTabBarContentsView.self))
             .instantiate(withOwner: self, options: nil).first as! JGTabBarContentsView

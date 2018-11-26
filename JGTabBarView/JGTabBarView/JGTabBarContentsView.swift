@@ -29,6 +29,10 @@ public class JGTabBarContentsView: UIView {
     private var lastCallBackIndex: Int = -1
     
     // MARK: public
+    open func refreshCurrentTab() {
+        selectTab(index: getCurrentIndex())
+    }
+        
     open func selectTab(index: Int) {
         if let selectedButton = tabButtons?[index] {
             selectedButton.sendActions(for: UIControl.Event.touchUpInside)
