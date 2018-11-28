@@ -30,6 +30,7 @@ public class JGTabBarContentsView: UIView {
     
     // MARK: public
     open func refreshCurrentTab() {
+        lastCallBackIndex = -1
         selectTab(index: getCurrentIndex())
     }
         
@@ -122,8 +123,8 @@ public class JGTabBarContentsView: UIView {
     
     private func onTouchTab(index: Int) {
         if index != lastCallBackIndex {
-        lastCallBackIndex = index
-        tabs?[index].onTouchTab()
+            lastCallBackIndex = index
+            tabs?[index].onTouchTab()
         }
     }
     
