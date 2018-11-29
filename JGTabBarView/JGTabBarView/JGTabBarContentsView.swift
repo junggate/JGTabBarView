@@ -31,7 +31,9 @@ public class JGTabBarContentsView: UIView {
     // MARK: public
     open func refreshCurrentTab() {
         lastCallBackIndex = -1
-        selectTab(index: getCurrentIndex())
+        let currentButton = tabButtons?[getCurrentIndex()]
+        currentButton?.sendActions(for: UIControl.Event.touchUpInside)
+        
     }
         
     open func selectTab(index: Int) {
