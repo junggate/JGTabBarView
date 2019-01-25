@@ -20,6 +20,8 @@ import UIKit
         }
     }
     var tabBarContentsView: JGTabBarContentsView?
+    
+    public var tabButton: [UIButton]?
     public var tabs: [JGTabBar]? {
         set {
           tabBarContentsView?.tabs = newValue
@@ -28,6 +30,27 @@ import UIKit
             return tabBarContentsView?.tabs
         }
     }
+    
+    public var isHeaderViewHidden: Bool {
+        set {
+            tabBarContentsView?.isHeaderViewHidden = newValue
+        }
+        get {
+            return tabBarContentsView?.isHeaderViewHidden ?? false
+        }
+    }
+    
+    open var tabBarViewDidScroll: ((CGFloat) -> Void)? {
+        didSet {
+            tabBarContentsView?.tabBarViewDidScroll = tabBarViewDidScroll
+        }
+    }
+    open var tabBarViewEndScroll: ((Int) -> Void)? {
+        didSet {
+            tabBarContentsView?.tabBarViewEndScroll = tabBarViewEndScroll
+        }
+    }
+
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -40,8 +63,30 @@ import UIKit
     }
     
     // MARK: - public
+    open var scrollView: UIScrollView? {
+        get {
+            return tabBarContentsView?.contentScrollView
+        }
+    }
+    
+    open var headerView: UIView? {
+        get {
+            return tabBarContentsView?.headerView
+        }
+    }
+    
+    open var tabButtons: [UIButton]? {
+        get {
+            return tabBarContentsView?.tabButtons
+        }
+    }
+    
     open func refreshCurrentTab() {
         tabBarContentsView?.refreshCurrentTab()
+    }
+    
+    open func selectTab(index: Int) {
+        tabBarContentsView?.selectTab(index: index)
     }
     
     private func initialize() {

@@ -12,9 +12,14 @@ public class JGTabBarContentsView: UIView {
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var contentScrollView: UIScrollView!
     @IBOutlet weak var headerWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var headerHeightConstraint: NSLayoutConstraint!
     
-    var tabButtons: [JGTabButton]? = []
-    public var tabs: [JGTabBar]? {
+    var tabButtons: [UIButton]? = []
+    
+    private var lastCallBackIndex: Int = -1
+    
+    // MARK: public
+    open var tabs: [JGTabBar]? {
         didSet {
             tabs?.forEach({ (tab) in
                 if let button = addTab(tab: tab){
@@ -26,14 +31,19 @@ public class JGTabBarContentsView: UIView {
         }
     }
     
-    private var lastCallBackIndex: Int = -1
+    open var tabBarViewDidScroll: ((CGFloat) -> Void)?
+    open var tabBarViewEndScroll: ((Int) -> Void)?
+
+    open var isHeaderViewHidden = false {
+        didSet {
+            headerHeightConstraint.constant = isHeaderViewHidden ? 0 : 44.0
+        }
+    }
     
-    // MARK: public
     open func refreshCurrentTab() {
         lastCallBackIndex = -1
         let currentButton = tabButtons?[getCurrentIndex()]
         currentButton?.sendActions(for: UIControl.Event.touchUpInside)
-        
     }
         
     open func selectTab(index: Int) {
@@ -43,7 +53,6 @@ public class JGTabBarContentsView: UIView {
     }
     
     // MARK: - private
-    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -103,6 +112,7 @@ public class JGTabBarContentsView: UIView {
             view.leadingAnchor.constraint(equalTo: lastView.trailingAnchor).isActive = true
         }
         
+        view.topAnchor.constraint(equalTo: contentScrollView.topAnchor).isActive = true
         view.widthAnchor.constraint(equalTo: contentScrollView.widthAnchor).isActive = true
         view.heightAnchor.constraint(equalTo: contentScrollView.heightAnchor).isActive = true
     }
@@ -110,9 +120,12 @@ public class JGTabBarContentsView: UIView {
     private func getCurrentIndex() -> Int {
         let offsetX = contentScrollView.contentOffset.x
         let scrollWidth = contentScrollView.bounds.width
-        let index = Int(roundf(Float(offsetX)/Float(scrollWidth)))
+        let currentX = offsetX/scrollWidth
+        tabBarViewDidScroll?(currentX)
+        let index = Int(CGFloat(roundf(Float(currentX))))
         return index
     }
+    
     /// 버튼 선택 처리 (나머지 셀렉트 취소)
     ///
     /// - Parameter selectedButton: 셀렉트할 버튼
@@ -126,6 +139,7 @@ public class JGTabBarContentsView: UIView {
     private func onTouchTab(index: Int) {
         if index != lastCallBackIndex {
             lastCallBackIndex = index
+            tabBarViewEndScroll?(index)
             tabs?[index].onTouchTab()
         }
     }
@@ -142,17 +156,21 @@ public class JGTabBarContentsView: UIView {
 extension JGTabBarContentsView: UIScrollViewDelegate {
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let index = getCurrentIndex()
-        if let button = tabButtons?[Int(index)] {
+        if let button = tabButtons?[index] {
             selectButton(selectedButton: button)
         }
     }
     
     public func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
-        onTouchTab(index: getCurrentIndex())
+        scrollEndCallBack()
     }
     
     public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        onTouchTab(index: getCurrentIndex())
+        scrollEndCallBack()
     }
     
+    private func scrollEndCallBack() {
+        let index = getCurrentIndex()
+        onTouchTab(index: index)
+    }
 }
