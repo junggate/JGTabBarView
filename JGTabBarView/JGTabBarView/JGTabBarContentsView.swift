@@ -13,6 +13,7 @@ public class JGTabBarContentsView: UIView {
     @IBOutlet weak var contentScrollView: UIScrollView!
     @IBOutlet weak var headerWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var headerHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var contentTopConstraint: NSLayoutConstraint!
     
     var tabButtons: [UIButton]? = []
     
@@ -36,7 +37,7 @@ public class JGTabBarContentsView: UIView {
 
     open var isHeaderViewHidden = false {
         didSet {
-            headerHeightConstraint.constant = isHeaderViewHidden ? 0 : 44.0
+            contentTopConstraint.constant = isHeaderViewHidden ? 0.0 : 44.0
         }
     }
     
@@ -108,13 +109,13 @@ public class JGTabBarContentsView: UIView {
         } else if let last = tabs.last as? NSObject, last == tabObject, let lastView = lastView { // 마지막
             view.leadingAnchor.constraint(equalTo: lastView.trailingAnchor, constant: 0).isActive = true
             view.rightAnchor.constraint(equalTo: contentScrollView.rightAnchor).isActive = true
-        } else if let lastView = lastView { // 중간
+        } else if let lastView = lastView { // 중간.
             view.leadingAnchor.constraint(equalTo: lastView.trailingAnchor).isActive = true
         }
         
-        view.topAnchor.constraint(equalTo: contentScrollView.topAnchor).isActive = true
-        view.widthAnchor.constraint(equalTo: contentScrollView.widthAnchor).isActive = true
-        view.heightAnchor.constraint(equalTo: contentScrollView.heightAnchor).isActive = true
+        contentScrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        contentScrollView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        contentScrollView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
     }
 
     private func getCurrentIndex() -> Int {
