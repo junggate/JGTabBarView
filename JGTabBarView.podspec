@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "JGTabBarView"
-s.version      = "1.0.1"
+s.version      = "1.0.2"
 s.summary      = "Storyboard를 이용한 스크롤 제스처 기반의 탭바 뷰"
 
 # This description is used to generate tags and improve search results.
