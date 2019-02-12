@@ -67,6 +67,15 @@ public class JGTabBarContentsView: UIView {
         contentScrollView.delegate = self
     }
     
+    public func getCurrentIndex() -> Int {
+        let offsetX = contentScrollView.contentOffset.x
+        let scrollWidth = contentScrollView.bounds.width
+        let currentX = offsetX/scrollWidth
+        tabBarViewDidScroll?(currentX)
+        let index = Int(CGFloat(roundf(Float(currentX))))
+        return index
+    }
+   
     private func addTab(tab: JGTabBar) -> JGTabButton? {
         if let tabButton = UINib(nibName: "JGTabButton", bundle: Bundle(for: JGTabButton.self)).instantiate(withOwner: self, options: nil).first as? JGTabButton {
             let lastButton = headerView.subviews.last
@@ -118,15 +127,6 @@ public class JGTabBarContentsView: UIView {
         contentScrollView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
     }
 
-    private func getCurrentIndex() -> Int {
-        let offsetX = contentScrollView.contentOffset.x
-        let scrollWidth = contentScrollView.bounds.width
-        let currentX = offsetX/scrollWidth
-        tabBarViewDidScroll?(currentX)
-        let index = Int(CGFloat(roundf(Float(currentX))))
-        return index
-    }
-    
     /// 버튼 선택 처리 (나머지 셀렉트 취소)
     ///
     /// - Parameter selectedButton: 셀렉트할 버튼
