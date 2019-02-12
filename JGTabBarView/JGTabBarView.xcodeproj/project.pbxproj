@@ -85,8 +85,8 @@
 			files = (
 				14B0431321A3A5F700FE741E /* JGTabBarView.swift in Headers */,
 				14B0431621A3A5F700FE741E /* JGTabBar.swift in Headers */,
-				14B0431421A3A5F700FE741E /* JGTabBarContentsView.swift in Headers */,
 				14B0431521A3A5F700FE741E /* JGTabButton.swift in Headers */,
+				14B0431421A3A5F700FE741E /* JGTabBarContentsView.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

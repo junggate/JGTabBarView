@@ -53,7 +53,6 @@ public class JGTabBarContentsView: UIView {
         }
     }
     
-    // MARK: - private
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -75,7 +74,28 @@ public class JGTabBarContentsView: UIView {
         let index = Int(CGFloat(roundf(Float(currentX))))
         return index
     }
+    
+    /// 버튼 선택 처리 (나머지 셀렉트 취소)
+    ///
+    /// - Parameter selectedButton: 셀렉트할 버튼
+    public func selectButton(selectedButton: UIButton) {
+        tabButtons?.forEach({ (tabButton) in
+            tabButton.isSelected = false
+        })
+        selectedButton.isSelected = true
+    }
    
+    
+    public func onTouchTab(index: Int) {
+        if index != lastCallBackIndex {
+            lastCallBackIndex = index
+            tabBarViewEndScroll?(index)
+            tabs?[index].onTouchTab()
+        }
+    }
+
+    // MARK: - private
+
     private func addTab(tab: JGTabBar) -> JGTabButton? {
         if let tabButton = UINib(nibName: "JGTabButton", bundle: Bundle(for: JGTabButton.self)).instantiate(withOwner: self, options: nil).first as? JGTabButton {
             let lastButton = headerView.subviews.last
@@ -125,24 +145,6 @@ public class JGTabBarContentsView: UIView {
         contentScrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         contentScrollView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         contentScrollView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
-    }
-
-    /// 버튼 선택 처리 (나머지 셀렉트 취소)
-    ///
-    /// - Parameter selectedButton: 셀렉트할 버튼
-    private func selectButton(selectedButton: UIButton) {
-        tabButtons?.forEach({ (tabButton) in
-            tabButton.isSelected = false
-        })
-        selectedButton.isSelected = true
-    }
-    
-    private func onTouchTab(index: Int) {
-        if index != lastCallBackIndex {
-            lastCallBackIndex = index
-            tabBarViewEndScroll?(index)
-            tabs?[index].onTouchTab()
-        }
     }
     
     // MARK: - Touch Event
